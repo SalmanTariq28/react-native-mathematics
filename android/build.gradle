@@ -6,7 +6,7 @@ buildscript {
         }
 
         dependencies {
-            classpath 'com.android.tools.build:gradle:3.5.3'
+            classpath 'com.android.tools.build:gradle:8.1.1'
         }
     }
 }
@@ -18,11 +18,11 @@ def safeExtGet(prop, fallback) {
 }
 
 android {
-    compileSdkVersion safeExtGet('Mathematics_compileSdkVersion', 29)
-    buildToolsVersion safeExtGet('Mathematics_buildToolsVersion', '29.0.2')
+    compileSdkVersion safeExtGet('Mathematics_compileSdkVersion', 33)
+    buildToolsVersion safeExtGet('Mathematics_buildToolsVersion', '33.0.2')
     defaultConfig {
-        minSdkVersion safeExtGet('Mathematics_minSdkVersion', 16)
-        targetSdkVersion safeExtGet('Mathematics_targetSdkVersion', 29)
+        minSdkVersion safeExtGet('Mathematics_minSdkVersion', 21)
+        targetSdkVersion safeExtGet('Mathematics_targetSdkVersion', 33)
         versionCode 1
         versionName "1.0"
 
